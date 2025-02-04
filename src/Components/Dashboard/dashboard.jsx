@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function Dashboard() {
-    const [showaddTask, setShowaddTask] = useState(true);
+    
     const navigate=useNavigate()
     const handelLogout=()=>{
         localStorage.removeItem('isAuthorized');
@@ -32,7 +32,7 @@ export default function Dashboard() {
                             underline="hover"
                             color="inherit"
                            
-                            onClick={() => setShowaddTask(true)}
+                            
                             sx={{ cursor: "pointer" }}
                         >
                             Task Management
